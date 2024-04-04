@@ -1,6 +1,14 @@
 //criação do controller (nest g controller NOME DO CONTROLLER)
 
-import { Body, Controller, Get, Inject, Patch, Post } from '@nestjs/common';
+import {
+  BadRequestException,
+  Body,
+  Controller,
+  Get,
+  Inject,
+  Patch,
+  Post,
+} from '@nestjs/common';
 import { get } from 'http';
 import GetShelterDetailsUseCaseOutput from './usecases/dtos/get.shelter.details.usecase.output';
 import { IUseCase } from 'src/domain/iusecase.interface';
