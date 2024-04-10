@@ -11,6 +11,12 @@ export class Pet {
   _id: string;
 
   @Prop({ required: true })
+  name: string;
+
+  @Prop({ required: true })
+  type: string;
+
+  @Prop({ required: true })
   size: string;
 
   @Prop({ required: true })
@@ -19,7 +25,7 @@ export class Pet {
   @Prop({ required: true })
   bio: string;
 
-  @Prop({ required: true })
+  @Prop({ required: false, default: null })
   photo: string;
 
   @Prop({ required: true })
