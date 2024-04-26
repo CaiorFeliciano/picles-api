@@ -139,7 +139,7 @@ export class PetController {
     }
   }
 
-  @Patch(':id/photo')
+  @Put(':id/photo')
   @UseInterceptors(FileInterceptor('photo', multerConfig))
   async updatePhoto(
     @UploadedFile() photo: Express.Multer.File,
